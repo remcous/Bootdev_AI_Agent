@@ -63,6 +63,6 @@ schema_run_python_file = types.FunctionDeclaration(
                 items=types.Schema(type=types.Type.STRING),
             ),
         },
+        required=["file_path"],
     ),
-    required=["file_path"],
 )
