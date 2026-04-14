@@ -25,6 +25,7 @@ def main():
     if args.verbose:
         print(f"User prompt: {args.user_prompt}\n")
         
+    for _ in range(MAX_ITERS):
         try:
             final_response = generate_content(client, messages, args.verbose)
             if final_response:
